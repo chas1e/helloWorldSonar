@@ -14,7 +14,7 @@ public class ProductDTOWithBuyingPrice {
         private double retailPrice;
 
         private double buyingPrice;
-
+//ijjfdijfiji
         private UserDTOSupplierDetail supplier;
 
     public ProductDTOWithBuyingPrice() {
