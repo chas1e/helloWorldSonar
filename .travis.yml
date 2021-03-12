@@ -13,6 +13,6 @@ addons:
 jobs:
   include:
     - stage: buildAutomation
-      script: ./gradlew sonarqube, ./gradlew test --tests *UnitTest
+      script: ./gradlew sonarqube, ./gradlew test --tests *.unitTest.*
     - stage: continousIntegration
-      script: gradle test --tests *IntegTest
+      script: gradle test --tests *.integTest.*

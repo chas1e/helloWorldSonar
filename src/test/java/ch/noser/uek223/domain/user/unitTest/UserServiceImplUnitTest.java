@@ -1,4 +1,4 @@
-package ch.noser.uek223.domain.user;
+package ch.noser.uek223.domain.user.unitTest;
 
 import ch.noser.uek223.domain.user.User;
 import ch.noser.uek223.domain.user.UserRepository;
