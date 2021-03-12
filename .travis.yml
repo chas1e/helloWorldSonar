@@ -14,6 +14,9 @@ addons:
 jobs:
   include:
     - stage: buildAutomation
-      script: ./gradlew sonarqube, ./gradlew test --test ch.noser.uek223.domain.user.unitTest.*
+      script:
+        - ./gradlew sonarqube
+        - ./gradlew test --test ch.noser.uek223.domain.user.unitTest.*
     - stage: continousIntegration
-      script: gradle test --tests ch.noser.uek223.domain.user.integTest.*
+      script:
+        - gradle test --tests ch.noser.uek223.domain.user.integTest.*
