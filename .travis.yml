@@ -12,5 +12,7 @@ addons:
     token: $SONAR_TOKEN
 jobs:
   include:
+    - stage: buildAutomation
+      script: ./gradlew sonarqube, ./gradlew test --tests *UnitTest
     - stage: continousIntegration
-      script: ./gradlew sonarqube
+      script: gradle test --tests *IntegTest
