@@ -5,3 +5,4 @@ public enum Availability {
     ARCHIVED,
     OUT_OF_STOCK
 }
+//oidjfoisoijf
